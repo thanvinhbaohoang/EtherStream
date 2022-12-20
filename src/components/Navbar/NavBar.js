@@ -9,6 +9,9 @@ export const NavBar = () => {
           <p class='nav-item'>A</p>
         </NavLink>
 
+        <div class='nav-items-line'>
+          
+        </div>
         <NavLink to="/b" >
           <p class='nav-item'>B</p>
         </NavLink><NavLink to="/c" >

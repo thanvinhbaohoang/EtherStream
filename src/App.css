@@ -2,12 +2,7 @@
   font-family: "Ubuntu", sans-serif;
   text-align: center;
   display: flex;
-  flex-direction: column;
   background: #36393f;
-}
-
-a:active {
-  text-decoration: none;
 }
 
 .navbar {
@@ -25,11 +20,16 @@ a:active {
   padding: 20px 0px;
   width: 70%;
   background: #2f3339b7;
-  border-radius: 12px;
+  border-radius: 22px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.nav-items-line{
+  width: 60%;
+  border: solid rgba(255, 255, 255, 0.309) 0.5px;
 }
 
 .nav-item {
@@ -58,3 +58,142 @@ a:active {
   background-color: #20af4d;
 } 
 
+
+.page {
+  width: 80%;
+  background: #0f1011;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.home {
+  height: 100%;
+  display: flex;
+  padding: 30px 100px;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: 99999;
+}
+
+
+.search-input {
+  color: white;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  background: none;
+}
+.home-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+  border-radius: 28px;
+  background: linear-gradient(45deg, #20af4d,#20afa3, #207daf);
+  justify-self: center;
+}
+
+.home-suggestions{
+  margin-top:30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.section-title{
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.suggestions-section{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.service-card{
+  background-color: rgb(7, 5, 22);
+  width: 80%;
+  margin-bottom: 10px;
+  height: 20%;
+  padding: 30px;
+  border: solid black 1px;
+  border-radius: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.service-card:hover{
+  cursor: pointer;
+  border: solid white 1px;
+  background-color: rgb(38, 36, 55);
+  transition: 0.3s;
+}
+.service-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-thumbnail {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border: solid white 1px;
+  border-radius: 18px;
+}
+.service-name-and-price{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: baseline;
+}
+
+.service-name{
+  font-weight: bold;
+}
+
+.service-price {
+  color: rgb(16, 198, 0);
+}
+.service-subscribe-button {
+  color: white;
+  text-decoration: none;
+  background-color: #de0050;
+  border: solid black 1px;
+  border-radius: 8px;
+  padding: 15px 20px;
+  transition: 0.1s;
+}
+
+.service-subscribe-button:hover {
+  cursor: pointer;
+  border: solid white 1px;
+  transition: 0.2s ease-in-out;
+  filter: brightness(0.8);
+}
+
+.service-subscribe-button:active{
+  box-shadow: black 3px 5px 10px;
+  transition: 0.08s ease-out;
+  transform: translateY(5px);
+}
+
+/* a:hover, a:focus {
+  text-decoration:none;
+} */
