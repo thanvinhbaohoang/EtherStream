@@ -10,10 +10,10 @@ export const NavBar = () => {
         </NavLink>
 
         <div class='nav-items-line'>
-          
+
         </div>
-        <NavLink to="/b" >
-          <p class='nav-item'>B</p>
+        <NavLink to="/login" >
+          <p class='nav-item'>LogIn</p>
         </NavLink><NavLink to="/c" >
           <p class='nav-item'>C</p>
         </NavLink><NavLink to="/d"d >

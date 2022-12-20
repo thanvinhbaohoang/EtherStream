@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { MusicPlayer } from './MusicPlayer';
 
 export const ServiceCard = () => {
   return (
@@ -58,8 +58,7 @@ class Home extends React.PureComponent {
             <ServiceCard/>
           </div>
         </div>
-         
-          
+                  
         </div>
        
       </div>

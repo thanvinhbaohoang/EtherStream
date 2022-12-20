@@ -1,10 +1,9 @@
 import './App.css';
 import NavBar from './components/Navbar/NavBar';
 import {Route, Routes, BrowserRouter} from 'react-router-dom';
-import Contacts from './components/Contacts';
 import Home from './components/Home';
-import Products from './components/Products';
-
+import { LogIn } from './components/LogIn';
+import { MusicPlayer } from './components/MusicPlayer';
 
 function App() {
   return (
@@ -13,10 +12,11 @@ function App() {
           <NavBar/>
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
-            <Route exact path="/contacts" element={<Contacts />}></Route>
-            <Route exact path="/products" element={<Products />}></Route>
+            <Route exact path="/login" element={<LogIn />}></Route>
           </Routes>
         </BrowserRouter>
+
+        <MusicPlayer/>
     </div>
   );
 }

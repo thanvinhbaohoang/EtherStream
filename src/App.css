@@ -1,4 +1,5 @@
 .App {
+  color:white;
   font-family: "Ubuntu", sans-serif;
   text-align: center;
   display: flex;
@@ -62,7 +63,6 @@
 .page {
   width: 80%;
   background: #0f1011;
-  display: flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -194,6 +194,77 @@
   transform: translateY(5px);
 }
 
-/* a:hover, a:focus {
-  text-decoration:none;
-} */
+a:hover, a:focus {
+  text-decoration:none !important
+}
+
+
+.music-player{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(19, 26, 37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+}
+
+.music-controls{
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.music-controls-items{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.music-controls-item {
+  width: 40px;
+  height: 40px;
+  background:#20af4d;
+  border-radius: 50%;
+  border: solid black 1px;
+  
+}
+/* =============================================================== */
+
+
+.login-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  font-size: large;
+  margin: 10px;
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: rgb(29, 69, 191);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.box:hover{
+  cursor: pointer;
+  border: solid white 1px;
+  transition: 0.2s;
+}
+
+.box:active{
+  transform: translateY(3px);
+  box-shadow: rgba(255, 255, 255, 0.394) 1px 3px;
+  transition: 0.1s;
+}
+
