@@ -1,38 +1,60 @@
 .App {
+  font-family: "Ubuntu", sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background: #36393f;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  background: #202225;
+  flex-direction: column;
+  height: 100vh;
+  width: 15vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.nav-items {
+  height: 40%;
+  padding: 20px 0px;
+  width: 70%;
+  background: #2f3339b7;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  color:grey;
+  align-items: center;
+  background: #36393f;
+  transition: 0.5s;
+} 
+
+.nav-item:hover{
+  border-radius: 12px;
+  transition: 0.2s;
+  color:white;
+  background-color: #3ba55da1;
+}
+.active .nav-item{
+  border-radius: 12px;
   color: white;
-}
+  transition: 0.2s ease-out;
+  background-color: #20af4d;
+} 
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
