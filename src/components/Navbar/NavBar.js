@@ -4,6 +4,9 @@ import { NavLink } from 'react-router-dom';
 export const NavBar = () => {
   return (
     <div className='navbar'>
+      <div class = 'logo-container'>
+        Ethereal
+        </div>
       <div class='nav-items'>
         <NavLink to="/" >
           <p class='nav-item'>A</p>
