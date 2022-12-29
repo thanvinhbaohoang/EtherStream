@@ -1,6 +1,9 @@
 import React from 'react';
 import { MusicPlayer } from './MusicPlayer';
 
+
+import { FaPlay } from 'react-icons/fa';
+
 export const ServiceCard = () => {
   return (
       <div class="service-card">
@@ -11,11 +14,11 @@ export const ServiceCard = () => {
               
               <div class = 'service-name-and-price'>
               <div class= 'service-name'>
-                  Netflix
+                  This is the song Name
               </div>
 
               <div class= 'service-price'>
-                  $9/month
+                  Artist Name 
               </div>
               </div>
              
@@ -25,14 +28,13 @@ export const ServiceCard = () => {
 
           <a href="/" target='_blank' class ='service-right'>
               <div class ='service-subscribe-button'>
-                  Subscribe
+                  3:42
               </div>
           </a>
       </div>
 
   )
 }
-
 class Home extends React.PureComponent {
   render() {
     return (
@@ -40,27 +42,37 @@ class Home extends React.PureComponent {
         <div class ='home'>
           <input class='search-input' type='text' placeholder='Search Your Song ...' />
           <div class= 'home-banner'>
-            HOME BANNER HERE
+            <div class='home-banner-left'>
+              <h4 class='home-banner-artist'>
+                The Artist
+              </h4>
+              <h1 class='home-banner-song'>
+                This is the song Name
+              </h1>
+            </div>
+            <div id='banner-play-button'><FaPlay/></div>
             
           </div>
-        <div class ='home-suggestions'>
-          <div class='suggestions-section'>
-              <div class = 'section-title'>Popular</div>
+
+          <div class ='home-suggestions'>
+            <div class='suggestions-section'>
+                <div class = 'section-title'>Popular</div>
+                <ServiceCard/>
+                <ServiceCard/>
+                <ServiceCard/>
+              </div>
+
+            <div class='suggestions-section'>
+              <div class = 'section-title'>New Songs</div>
               <ServiceCard/>
               <ServiceCard/>
               <ServiceCard/>
             </div>
-
-          <div class='suggestions-section'>
-            <div class = 'section-title'>New Songs</div>
-            <ServiceCard/>
-            <ServiceCard/>
-            <ServiceCard/>
           </div>
+          <MusicPlayer/>
+
         </div>
-                  
-        </div>
-       
+
       </div>
     )
   }

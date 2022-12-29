@@ -7,16 +7,10 @@ export const MusicPlayer = () => {
     return(
         <div className="music-player">
             <div class='music-controls'>
-                <div class='music-controls-items'>
-                    <div class='song-pic'>Song Pic</div>
-
-                    <div class='song-info'>
-                        <div class='song-info-name'>Song Name</div>
-                        <div class='song-info-artist'>Artists</div>
-                    </div>
-                    <div class='song-like-button'>
-                        <HiOutlineHeart/>
-                    </div>
+                <div class='music-player-left'>
+                        <HiOutlineHeart class='song-like-button music-player-item'/>
+                        <HiOutlineHeart class='song-like-button music-player-item'/>
+                        <HiOutlineHeart class='song-like-button music-player-item'/>
                 </div>
 
                <div class='music-player-mid'>
@@ -26,15 +20,18 @@ export const MusicPlayer = () => {
                         <div class='music-player-item'><FaStepForward/></div>
                     </div>
                     
-                    <div class='music-player-bar'></div>
                </div>
 
 
-                <div class='music-volume-container'>
+                <div class='music-player-right'>
                     <div class='music-volume-logo'><FaVolumeUp/></div>
                     <div class='music-volume-bar'></div>
                 </div>
             </div>
+
+
+            <div class='music-player-bar'></div>
+
         </div>
     )
 }

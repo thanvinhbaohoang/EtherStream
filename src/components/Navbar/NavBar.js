@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
-// import './navbar.css';
+import {FaUser, FaRegUser} from 'react-icons/fa';
+import { ConnectWallet } from '../ConnectWallet';
 
 export const NavBar = () => {
   return (
@@ -9,15 +10,15 @@ export const NavBar = () => {
         </div>
       <div class='nav-items'>
         <NavLink to="/" >
-          <p class='nav-item'>A</p>
+          <p class='nav-item'><FaUser/></p>
         </NavLink>
-
+        
         <div class='nav-items-line'>
 
         </div>
-        <NavLink to="/login" >
-          <p class='nav-item'>LogIn</p>
-        </NavLink><NavLink to="/c" >
+          {/* https://docs.family.co/connectkit/theming#additional-options */}
+          <ConnectWallet/> 
+        <NavLink to="/c" >
           <p class='nav-item'>C</p>
         </NavLink><NavLink to="/d"d >
           <p class='nav-item'>D</p>
