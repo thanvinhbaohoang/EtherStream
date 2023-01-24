@@ -40,7 +40,6 @@ class Home extends React.PureComponent {
     return (
       <div class='page'>
         <div class ='home'>
-          <input class='search-input' type='text' placeholder='Search Your Song ...' />
           <div class= 'home-banner'>
             <div class='home-banner-left'>
               <h4 class='home-banner-artist'>

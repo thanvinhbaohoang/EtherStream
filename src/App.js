@@ -15,7 +15,6 @@ function App() {
             <Route exact path="/login" element={<LogIn />}></Route>
           </Routes>
         </BrowserRouter>        
-        {/* <MusicPlayer/> */}
     </div>
   );
 }

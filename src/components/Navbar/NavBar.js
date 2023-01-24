@@ -5,19 +5,13 @@ import { ConnectWallet } from '../ConnectWallet';
 export const NavBar = () => {
   return (
     <div className='navbar'>
-      <div class = 'logo-container'>
-        Ethereal
-        </div>
       <div class='nav-items'>
         <NavLink to="/" >
           <p class='nav-item'><FaUser/></p>
         </NavLink>
         
-        <div class='nav-items-line'>
+        <input class='search-input' type='text' placeholder='Search Your Song ...' />
 
-        </div>
-          {/* https://docs.family.co/connectkit/theming#additional-options */}
-          <ConnectWallet/> 
         <NavLink to="/c" >
           <p class='nav-item'>C</p>
         </NavLink><NavLink to="/d"d >
@@ -25,7 +19,8 @@ export const NavBar = () => {
         </NavLink><NavLink to="/e" >
           <p class='nav-item'>E</p>
         </NavLink>
-
+        {/* https://docs.family.co/connectkit/theming#additional-options */}
+        <ConnectWallet/> 
       </div>
     </div>
   )

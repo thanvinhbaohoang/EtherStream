@@ -3,15 +3,13 @@
   font-family: "Helvetica";
   text-align: center;
   display: flex;
+  flex-direction: column;
   background: #36393f;
 }
 
 .navbar {
   display: flex;
   background: #202225;
-  flex-direction: column;
-  height: 100vh;
-  width: 15vh;
   justify-content: space-around;
   align-items: center;
   transition: 0.1s;
@@ -29,11 +27,11 @@
 .nav-items {
   height: 40%;
   padding: 20px 0px;
-  width: 70%;
+  width: 90%;
   background: #2f3339b7;
   border-radius: 22px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-around;
   align-items: center;
 }
@@ -71,7 +69,7 @@
 
 
 .page {
-  width: 70%;
+  width: 100%;
   background: #0f1011;
   display: flex;
   flex-direction: column;
@@ -80,7 +78,7 @@
 
 
 .home {
-  height: 100%;
+  height: 90vh;
   display: flex;
   padding: 0 100px;
   flex-direction: column;
@@ -94,9 +92,8 @@
 
 .search-input {
   color: white;
-  width: 100%;
+  width: 50%;
   height: 40px;
-  margin-bottom: 20px;
   border: none;
   border-radius: 10px;
   background: none;
