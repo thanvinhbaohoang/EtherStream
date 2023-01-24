@@ -14,6 +14,7 @@ function App() {
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/login" element={<LogIn />}></Route>
           </Routes>
+          <MusicPlayer/>
         </BrowserRouter>        
     </div>
   );

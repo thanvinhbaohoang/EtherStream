@@ -68,7 +68,6 @@ class Home extends React.PureComponent {
               <ServiceCard/>
             </div>
           </div>
-          <MusicPlayer/>
 
         </div>
 

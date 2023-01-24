@@ -10,7 +10,7 @@ export const NavBar = () => {
           <p class='nav-item'><FaUser/></p>
         </NavLink>
         
-        <input class='search-input' type='text' placeholder='Search Your Song ...' />
+        <input class='search-input' type='text' placeholder='Search ...' />
 
         <NavLink to="/c" >
           <p class='nav-item'>C</p>
