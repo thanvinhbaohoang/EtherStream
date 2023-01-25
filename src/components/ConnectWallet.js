@@ -38,19 +38,25 @@ const MyComponent = () => {
   const provider = useProvider()
   if (isDisconnected) return <div>Not Connected</div>
   return (
-    <>
-      <div>Connected Wallet: {address}</div>
+    <> 
+    {/* Data Here for Debugging */}
+      {/* <div>Connected Wallet: {address}</div> */}
+
       {/* <div>Provider: {console.log("PROVIDER:",provider)}</div>
       <div>Signer: {console.log(signer)}</div>
       <div>ChainName: {console.log(chain.network)}</div>
       <div>ChainID: {console.log(chain.id)}</div> */}
+
+
+      {/* Add Function Check for CFA Subscription and Display Status here */}
+      <button> Not Subscribed</button>
     </>
   );
 };
 
 
 // For now we will stick with FDAIx as default tokenName
-// async function getWalletInfo() {
+// async function tokenStreamAuthentication() {
 //     const provider = new ethers.providers.Web3Provider(window.ethereum);
 //     const signer = provider.getSigner();
 //     const chainId = await window.ethereum.request({ method: "eth_chainId" });
