@@ -75,13 +75,13 @@
 .home {
   height: 89.8vh;
   display: flex;
-  padding: 0 100px;
+  padding: 50px 100px;
   flex-direction: column;
 }
 
 
 .search-input {
-  color: rgb(132, 101, 101);
+  color: rgb(255, 255, 255);
   width: 50%;
   height: 40px;
   border: none;
