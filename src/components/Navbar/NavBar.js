@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import {FaUser, FaRegUser} from 'react-icons/fa';
 import { ConnectWallet } from '../ConnectWallet';
+import StreamAuth from '../StreamAuth';
 
 export const NavBar = () => {
   return (
@@ -21,6 +22,8 @@ export const NavBar = () => {
       
         {/* https://docs.family.co/connectkit/theming#additional-options */}
         <ConnectWallet/> 
+        <StreamAuth/> 
+
       </div>
     </div>
   )
