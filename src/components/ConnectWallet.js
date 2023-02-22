@@ -65,7 +65,6 @@ export const WalletData = () => {
   const { chain, chains } = useNetwork()
   // const provider = useProvider()
   if (isDisconnected) return <div>Not Connected</div>
-  else {userAddress = address.toLowerCase()}
   return (
     <> 
     {/* Data Here for Debugging */}
