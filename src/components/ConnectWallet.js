@@ -7,6 +7,7 @@ import axios from "axios";
 import { Web3Modal } from "@web3modal/react";
 import { useAccount, useConnect, useDisconnect, useEnsAvatar,useNetwork, useProvider, useSigner, useEnsName} from 'wagmi'
 import { configureChains, createClient, WagmiConfig } from "wagmi";
+import { publicProvider } from 'wagmi/providers/public'
 import { goerli, arbitrum, mainnet } from "wagmi/chains";
 import { Web3Button } from "@web3modal/react";
 import { useWeb3ModalTheme } from "@web3modal/react";
@@ -17,9 +18,12 @@ import { Component } from "react";
 
 const chains = [goerli, arbitrum, mainnet];
 // Wagmi client
-const { provider } = configureChains(chains, [
-  walletConnectProvider({ projectId: "<YOUR_PROJECT_ID>" }),
-]);
+// const { provider } = configureChains(chains, [
+//   walletConnectProvider({ projectId: "<YOUR_PROJECT_ID>" }),
+// ]);
+
+const { provider } = configureChains(chains, [publicProvider()])
+
 const wagmiClient = createClient({
   autoConnect: true,
   connectors: modalConnectors({
