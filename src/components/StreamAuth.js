@@ -10,11 +10,10 @@ class StreamAuth extends Component {
       };
       this.tokenStreamAuthentication = this.tokenStreamAuthentication.bind(this);
     }
-  
 
     componentDidMount() {
       console.log("componentDidMount: TOKEN STREAM AUTHENTICATION");
-    //   this.setState({address: walletAddress})
+      this.setState({address: window.userAddress}) //This address is received from ConnectWallet.js
       this.tokenStreamAuthentication()
     }
   
@@ -27,7 +26,7 @@ class StreamAuth extends Component {
         `
         query {
           streams(where:{
-                sender: "userAddress Here"
+                sender: ${this.state.address}
                 receiver: "0x45c01ceb87dbe6807ebecb9161408fc5c6acb5d1" 
                 }
               ) {
@@ -60,21 +59,18 @@ class StreamAuth extends Component {
           if (stream.currentFlowRate > 0) {
             console.log("Authenticated STREAM:", stream)
             this.setState({ isStreamAuthenticated: true })
-            // return true
           }
         })
     
         // Return False if-else
         console.log("tokenStreamAuthentication: FALSE");
         this.setState({ isStreamAuthenticated: false })
-        // return false
     }
     
 
     render() {
       return (
         <div>
-            <p>Address:{this.state.address}</p>
           <button>{this.state.isStreamAuthenticated? "Subscribed" : "Not Subscribed"}</button>
         </div>
       );

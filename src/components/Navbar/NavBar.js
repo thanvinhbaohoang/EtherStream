@@ -14,10 +14,10 @@ export const NavBar = () => {
           <p class='nav-item'><FaUser/></p>
         </NavLink>
         
-        <NavLink to="/c" >
-          <p class='nav-item'>C</p>
-        </NavLink><NavLink to="/d"d >
-          <p class='nav-item'>D</p>
+        <NavLink to="/login" >
+          <p class='nav-item'>Log In</p>
+        </NavLink><NavLink to="/unauthorizedpage"d >
+          <p class='nav-item'>UnauthorizedPage</p>
         </NavLink>
       
         {/* https://docs.family.co/connectkit/theming#additional-options */}
