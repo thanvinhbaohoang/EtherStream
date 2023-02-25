@@ -19,7 +19,6 @@ class StreamAuth extends Component {
             this.tokenStreamAuthentication();
         }, 5000
       );
-      this.setState({address: window.address.toString().toLowerCase()})
     }
   
   
@@ -61,11 +60,14 @@ class StreamAuth extends Component {
         // Return TRUE if exist one stream with currentFlowRate > 0
         streams.map( stream => {
           if (stream.currentFlowRate > 0) {
+            window.isStreamAuthenticated = auth
             auth = true;
           }
         })
         // Set State of isStreamAuthenticated
         this.setState({ isStreamAuthenticated: auth })
+        window.isStreamAuthenticated = auth
+        console.log("StreamAuth.js: window.isStreamAuthenticated: ", window.isStreamAuthenticated)
     }
     
 

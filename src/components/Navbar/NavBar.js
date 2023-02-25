@@ -14,11 +14,11 @@ export const NavBar = () => {
           <p class='nav-item'><FaUser/></p>
         </NavLink>
         
-        <NavLink to="/login" >
+        {/* <NavLink to="/login" >
           <p class='nav-item'>Log In</p>
         </NavLink><NavLink to="/unauthorizedpage"d >
           <p class='nav-item'>UnauthorizedPage</p>
-        </NavLink>
+        </NavLink> */}
       
         {/* https://docs.family.co/connectkit/theming#additional-options */}
         <ConnectWallet/> 
