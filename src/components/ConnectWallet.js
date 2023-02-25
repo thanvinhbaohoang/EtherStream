@@ -65,6 +65,7 @@ export const WalletData = () => {
   const provider = useProvider()
   // if (isDisconnected) return <div>Not Connected</div>
   window.address = address
+  if (isDisconnected) return window.isStreamAuthenticated = false
   return (
     <> 
     {/* Data Here for Debugging */}
