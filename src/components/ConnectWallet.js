@@ -12,6 +12,7 @@ import { infuraProvider } from 'wagmi/providers/infura'
 import { publicProvider } from 'wagmi/providers/public'
 import { goerli, arbitrum, mainnet } from "wagmi/chains";
 import { Web3Button } from "@web3modal/react";
+import { FaAddressCard } from "react-icons/fa";
 
 
 const chains = [goerli, mainnet];
@@ -37,7 +38,6 @@ const wagmiClient = createClient({
 
 // Web3Modal Ethereum Client
 const ethereumClient = new EthereumClient(wagmiClient, chains);
-
 //https://docs.walletconnect.com/2.0/web3modal/react/installation#usage
 export function ConnectWallet() {
   return (
@@ -46,7 +46,7 @@ export function ConnectWallet() {
         <Web3Button /> {/* Premade Web3Modal ConnectButton */}
         <WalletData/>
       </WagmiConfig>
-      
+
       <Web3Modal
           projectId="<YOUR_PROJECT_ID>"
           ethereumClient={ethereumClient}
@@ -62,13 +62,12 @@ export const WalletData = () => {
   const { address, isConnecting, isDisconnected } = useAccount();
   const { data: signer, isError, isLoading } = useSigner();  // https://wagmi.sh/react/hooks/useSigner
   const { chain, chains } = useNetwork()
-  // const provider = useProvider()
+  const provider = useProvider()
   // if (isDisconnected) return <div>Not Connected</div>
-  window.userAddress = address
+  window.address = address
   return (
     <> 
     {/* Data Here for Debugging */}
-      {/* <div>Connected Wallet: {address}</div> */}
       {/* <div>Provider: {console.log("PROVIDER:",provider)}</div> */}
       {/* <div>Signer: {console.log(signer)}</div> */}
       {/* <div>ChainID: {chain.id}</div> */}
@@ -76,3 +75,7 @@ export const WalletData = () => {
     </>
   );
 };
+
+export const ReturnWalletAddress = (address) => {
+  return address
+}
