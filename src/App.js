@@ -8,7 +8,7 @@ import UnauthorizedPage from './components/UnauthorizedPage';
 import StreamAuth from './components/StreamAuth';
 import React, { useEffect } from 'react';
 import { Component } from 'react';
-
+import YoutubePage from './components/YoutubePage';
 
 class App extends React.Component { 
   constructor(props) {
@@ -17,8 +17,6 @@ class App extends React.Component {
       isStreamAuthenticated: false,
     };
   }
-
-
 
   componentDidMount() {
     this.timerID = setInterval(
@@ -40,12 +38,14 @@ class App extends React.Component {
             {/* <Route exact path="/login" element={<LogIn />}></Route>
             <Route exact path="/unauthorizedpage" element={<UnauthorizedPage />}></Route> */}
           </Routes>
-          <MusicPlayer/>
         </BrowserRouter>    
-        {this.state.isStreamAuthenticated ? <Home/> : <UnauthorizedPage/>}   
+        {this.state.isStreamAuthenticated ? <YoutubePage/> : <UnauthorizedPage/>}   
     </div>
   );
           }   
 }
 
 export default App;
+
+
+
