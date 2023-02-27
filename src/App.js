@@ -1,9 +1,6 @@
 import './App.css';
 import NavBar from './components/Navbar/NavBar';
 import {Route, Routes, BrowserRouter} from 'react-router-dom';
-import Home from './components/Home';
-import { LogIn } from './components/LogIn';
-import { MusicPlayer } from './components/MusicPlayer';
 import UnauthorizedPage from './components/UnauthorizedPage';
 import StreamAuth from './components/StreamAuth';
 import React, { useEffect } from 'react';

@@ -10,10 +10,9 @@ body {
 
 input {
     font-size: 18px;
-    border-radius: .25em;
+    border-radius: 1px;
     width: 50%;
     padding: 10px;
-    justify-self: baseline;
 }
 
 

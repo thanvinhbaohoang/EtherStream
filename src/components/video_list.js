@@ -11,7 +11,7 @@ function VideoList(props) {
   });
 
   return (
-    <ul class= "video-list">
+    <ul>
       {videoItems}
     </ul>
   );

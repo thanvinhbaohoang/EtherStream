@@ -1,5 +1,7 @@
 
 import React, { Component } from 'react';
+import { createRoot } from 'react-dom/client';
+// import './style.scss';
 import './css/youtubepage.css';
 
 import debounce from 'lodash.debounce';
@@ -20,6 +22,7 @@ class YoutubePage extends Component {
 
     const search = (text) => {
       youtubeSearch(text).then((videos) => {
+        console.log("VIDEOS",videos)
         this.setState({
           videos,
           selectedVideo: videos[0],
@@ -34,14 +37,11 @@ class YoutubePage extends Component {
   render() {
     return (
       <div>
-        <div id="youtube-page">
         <SearchBar onSearchChange={this.search} />
-
         <div id="video-section">
           <VideoDetail video={this.state.selectedVideo} />
           <VideoList onVideoSelect={(selectedVideo) => this.setState({ selectedVideo })} videos={this.state.videos} />
         </div>
-          </div>
       </div>
     );
   }

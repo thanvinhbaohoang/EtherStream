@@ -7,15 +7,8 @@ export const NavBar = () => {
   return (
     <div className='navbar'>
       <div class='nav-items'>
-        {/* <NavLink to="/" >
-          <p class='nav-item'><FaUser/></p>
-        </NavLink> */}
-        
-      
-        {/* https://docs.family.co/connectkit/theming#additional-options */}
         <ConnectWallet/> 
         <StreamAuth/> 
-
       </div>
     </div>
   )

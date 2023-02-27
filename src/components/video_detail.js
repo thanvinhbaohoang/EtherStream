@@ -2,6 +2,7 @@ import React from 'react';
 
 function VideoDetail({ video }) {
   if (!video) {
+    console.log(video)
     return <div>Loading...</div>;
   }
   const { videoId } = video.id;
