@@ -16,6 +16,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    document.title = "EtherStream";
     this.timerID = setInterval(
       () => {
           console.log('App.js: AUTH INTERVAL: ', window.isStreamAuthenticated)
@@ -36,7 +37,7 @@ class App extends React.Component {
             <Route exact path="/unauthorizedpage" element={<UnauthorizedPage />}></Route> */}
           </Routes>
         </BrowserRouter>    
-        {this.state.isStreamAuthenticated ? <YoutubePage/> : <UnauthorizedPage/>}   
+        {window.isStreamAuthenticated ? <YoutubePage/> : <UnauthorizedPage/>}   
     </div>
   );
           }   
