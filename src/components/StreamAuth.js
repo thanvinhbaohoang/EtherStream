@@ -73,9 +73,7 @@ class StreamAuth extends Component {
 
     render() {
       return (
-        <div>
-          <button>{this.state.isStreamAuthenticated? "Subscribed": "Not Subscribed"}</button>
-        </div>
+         <div class="subscribe-status">{this.state.isStreamAuthenticated? "Authorized": "Unauthorized"}</div> 
       );
     }
   }

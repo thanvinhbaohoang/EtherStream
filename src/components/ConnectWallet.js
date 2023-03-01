@@ -14,7 +14,6 @@ import { goerli, arbitrum, mainnet } from "wagmi/chains";
 import { Web3Button } from "@web3modal/react";
 import { FaAddressCard } from "react-icons/fa";
 
-
 const chains = [goerli];
 const { provider } = configureChains(
   chains,

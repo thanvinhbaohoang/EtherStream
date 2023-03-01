@@ -7,8 +7,15 @@ export const NavBar = () => {
   return (
     <div className='navbar'>
       <div class='nav-items'>
-        <ConnectWallet/> 
-        <StreamAuth/> 
+        
+        <h1 class="logo"> EtherStream</h1>
+
+        <div class='wallet-status'>
+          <ConnectWallet/> 
+          <StreamAuth/> 
+        <div/>
+
+      </div>
       </div>
     </div>
   )

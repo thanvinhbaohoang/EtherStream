@@ -36,12 +36,14 @@ class YoutubePage extends Component {
 
   render() {
     return (
-      <div>
+      <div className='youtube-page'>
         <SearchBar onSearchChange={this.search} />
+
         <div id="video-section">
           <VideoDetail video={this.state.selectedVideo} />
           <VideoList onVideoSelect={(selectedVideo) => this.setState({ selectedVideo })} videos={this.state.videos} />
         </div>
+        
       </div>
     );
   }

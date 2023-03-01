@@ -4,7 +4,11 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  background: #36393f;
+  /* justify-content: space-around; */
+  align-items: center;
+  background: #1e2136;
+  /* background: -webkit-linear-gradient(45deg, #9d00ac, #00ac9d); */
+
   height: 100vh;
 }
 
@@ -14,28 +18,42 @@
   justify-content: space-around;
   align-items: center;
   transition: 0.1s;
+  margin-bottom: 50px;
 }
 
-.logo-container{
+.logo{
+  background: -webkit-linear-gradient(45deg, #ee2dff, #67fff2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subscribe-status{
+  border-radius: 12px;
   display: flex;
-  font-size: 24px;
-  color:aquamarine;
-  position: fixed;
   justify-content: center;
-  top: 2%;
+  cursor:default;
+  background: linear-gradient(120deg, #a100af 10%,#20afa3, #207daf);
+  align-items: center;
+  font-weight: bold;
+  padding :10px 20px;
 }
 
 .nav-items {
   height: 40%;
-  padding: 20px 0px;
+  padding: 20px 40px;
   width: 90%;
-  background: #2f3339b7;
   border-radius: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wallet-status{
+  width: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 
 .nav-item {
   width: 50px;

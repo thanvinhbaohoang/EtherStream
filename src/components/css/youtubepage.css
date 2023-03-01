@@ -6,12 +6,17 @@ body {
 }
 
 #search-bar {
+  margin-bottom: 30px;
+  position: fixed;
+  top: 40px;
+  left: 20%;
+
 }
 
 input {
   color: rgb(255, 255, 255);
   font-size: 18px;
-  width: 50%;
+  width: 900px;
   height: 40px;
   border: none;
   border-radius: 8px;
@@ -20,7 +25,13 @@ input {
   transition: 0.2s;
 }
 
-
+.youtube-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 #video-section{
   display: flex;
   flex-direction: row;
@@ -60,7 +71,6 @@ input {
 .video-player{
   width: 100vh;
   height: 60vh;
-
 }
 
 
@@ -77,18 +87,17 @@ li {
   display: flex;
   width: 25vw;
   height: 11vh;
-  padding: 10px;
+  padding: 5px;
   margin: 5px;
 }
 
 li:hover {
-  background: rgba(255, 255, 255, 0.3);
+  border: solid #f47bff 1px;
+  filter: brightness(1.4);
   transition: 0.2s;
-  border: solid white 1px;
 }
 
-/*
-
-li:hover {
-background: darken( white, 30% );
-} */
+.video-thumbnail {
+  border-radius: 12px;
+  margin: 10px;
+}
