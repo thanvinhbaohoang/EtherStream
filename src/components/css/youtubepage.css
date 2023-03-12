@@ -10,13 +10,12 @@ body {
   position: fixed;
   top: 40px;
   left: 20%;
-
 }
 
 input {
   color: rgb(255, 255, 255);
   font-size: 18px;
-  width: 900px;
+  width: 50vw;
   height: 40px;
   border: none;
   border-radius: 8px;
